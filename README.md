@@ -141,6 +141,34 @@ const recommended = await prisma.furniture.findMany({
 
 ---
 
+## 🛠️ Admin Section
+
+The **Admin Panel** is designed to allow authorized users to manage the furniture inventory directly from the web interface.
+
+### 🔐 Access Control & Login
+
+- Only users with an email address ending in **@funistore.com** are granted access to the admin panel.
+- Regular users will not see the admin route in navigation and will be redirected to the homepage if they attempt to access it manually.
+- To access the admin panel, an authorized user must **log in** using their **Funistore email** through the login modal available in the navbar.
+- Once logged in, they can navigate to the **/admin** route to manage furniture.
+
+### 🧩 Admin Features
+
+- The admin dashboard provides a **simple interface** for managing furniture data.
+- Admins can:
+  - **Add new furniture** by entering details like name, description, price, dimensions, image URL, and category.
+  - **Update existing furniture** directly through the same interface.
+  - **View a list** of all furniture items displayed in a table format for easy management.
+
+### 💼 Workflow Summary
+
+1. Login with your **Funistore admin email** (e.g., `admin@funistore.com`).
+2. Navigate to **/admin** to open the dashboard.
+3. Use the form to **add new furniture** or select existing items to **edit**.
+4. All changes are immediately reflected in the furniture listing displayed on the main website.
+
+---
+
 ## 🧰 Common Scripts
 
 | Command                  | Location | Description                    |
