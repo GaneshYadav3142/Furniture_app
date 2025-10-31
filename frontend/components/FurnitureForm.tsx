@@ -39,12 +39,11 @@ export default function FurnitureForm({
     e.preventDefault();
 
     if (form.id) {
-      await updateFurniture(form.id, form); // ✅ safely cast to number
+      await updateFurniture(form.id, form);
     } else {
       await addFurniture(form);
     }
 
-    // ✅ reset all fields to empty strings (consistent types)
     setForm({
       name: "",
       description: "",

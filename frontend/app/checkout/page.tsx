@@ -161,7 +161,6 @@ export default function CheckoutPage() {
         </div>
       </div>
 
-      {/* ✅ Auth Modal for Login/Signup */}
       {showAuth && (
         <AuthModal
           onClose={() => setShowAuth(false)}
